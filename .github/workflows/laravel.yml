@@ -12,6 +12,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.baktijaya.sch.id
-          username: ${{ secrets.baktijay }}
+          username: baktijay
           password: "H0K9fuuA82&l"
           server-dir: /public_html/thantawi.com/project-app
