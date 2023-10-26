@@ -13,5 +13,5 @@ jobs:
         with:
           server: ftp.baktijaya.sch.id
           username: ${{ secrets.baktijay }}
-          password: ${{ secrets.H0K9fuuA82&l }}
+          password: "H0K9fuuA82&l"
           server-dir: /public_html/thantawi.com/project-app
