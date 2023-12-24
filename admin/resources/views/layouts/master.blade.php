@@ -32,7 +32,7 @@
     <script src="{{ asset('assets/js/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     @yield('js')
 
     <script src="{{ asset('assets/js/main.js') }}"></script>
