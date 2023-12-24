@@ -24,8 +24,8 @@
                     </li>
                 
                 
-                    <li class="sidebar-item active ">
-                        <a href="index.html" class='sidebar-link'>
+                    <li class="sidebar-item">
+                        <a href="{{ route('home') }}" class='sidebar-link'>
                             <i data-feather="home" width="20"></i> 
                             <span>Dashboard</span>
                         </a>
@@ -37,8 +37,8 @@
                 
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i data-feather="triangle" width="20"></i> 
-                            <span>Components</span>
+                            <i data-feather="globe" width="20"></i> 
+                            <span>Website</span>
                         </a>
                         
                         <ul class="submenu ">
