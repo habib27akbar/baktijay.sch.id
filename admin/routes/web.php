@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +21,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
-Route::post('/login', [App\Http\Controllers\LoginController::class, 'authenticate']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 });
