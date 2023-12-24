@@ -46,7 +46,7 @@
                 
                             
                             <li>
-                                <a href="component-alert.html">Sejarah</a>
+                                <a href="{{ route('sejarah.index') }}">Sejarah</a>
                             </li>
                             
                             <li>
