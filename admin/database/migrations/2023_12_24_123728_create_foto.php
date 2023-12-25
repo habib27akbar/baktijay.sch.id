@@ -16,6 +16,7 @@ class CreateFoto extends Migration
         Schema::create('foto', function (Blueprint $table) {
             $table->id();
             $table->string('image');
+            $table->string('keterangan');
             $table->integer('status');
             $table->timestamps();
         });

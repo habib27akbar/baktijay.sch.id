@@ -99,7 +99,7 @@
                         <ul class="submenu ">
                             
                             <li>
-                                <a href="component-extra-avatar.html">Foto</a>
+                                <a href="{{ route('foto.index') }}">Foto</a>
                             </li>
                             
                             <li>
@@ -117,13 +117,15 @@
                         </a>
                         
                         <ul class="submenu ">
-                            
+                            <li>
+                                <a href="component-extra-divider.html">Guru</a>
+                            </li>
                             <li>
                                 <a href="component-extra-avatar.html">Siswa</a>
                             </li>
                             
                             <li>
-                                <a href="component-extra-divider.html">Guru</a>
+                                <a href="component-extra-divider.html">Download</a>
                             </li>
                             
                         </ul>

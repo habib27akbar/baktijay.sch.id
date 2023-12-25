@@ -18,14 +18,18 @@
                                     <div class="card-body">
                                         @include('include.alert')
                                         
-                                        <form action="{{ route('sejarah.update', ['sejarah' => $sejarah[0]->id]) }}" method="post" enctype="multipart/form-data">
+                                        <form action="{{ route('foto.update', ['foto' => $foto['id']]) }}" method="post" enctype="multipart/form-data">
                                              @csrf
                                              @method('PUT')
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="description" class="form-label">Sejarah</label>
-                                                        <textarea class="form-control" name="description" id="description">{{ $sejarah[0]->description }}</textarea>
+                                                    <div class="form-group row align-items-center">
+                                                        <div class="col-lg-1 col-1">
+                                                            <label for="keterangan" class="form-label">Keterangan</label>
+                                                        </div>
+                                                        <div class="col-lg-11 col-11">
+                                                            <input type="text" id="keterangan" name="keterangan" class="form-control" value="{{ $foto['keterangan'] }}">
+                                                        </div>
                                                     </div>
                                                     <div class="form-group row align-items-center">
                                                             <div class="col-lg-1 col-1">
@@ -33,7 +37,7 @@
                                                             </div>
                                                             <div class="col-lg-4 col-4">
                                                                 <input type="file" id="image" class="form-control" name="image">
-                                                                <input type="hidden" name="image_old" value="{{ $sejarah[0]->image }}">
+                                                                <input type="hidden" name="image_old" value="{{ $foto['image'] }}">
                                                             </div>
                                                          <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.jpg / .jpeg)</b></div>
                                                     </div>

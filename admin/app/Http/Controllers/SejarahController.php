@@ -16,7 +16,7 @@ class SejarahController extends Controller
 
     public function update(Request $request, $id)
     {
-        $images = $request->input('image_old');
+        $image = $request->input('image_old');
         if ($request->file('image')) {
             $image = $request->file('image')->store('images');
         }
