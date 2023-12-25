@@ -35,12 +35,12 @@
                                                                 <input type="file" id="image" class="form-control" name="image">
                                                                 <input type="hidden" name="image_old" value="{{ $sejarah[0]->image }}">
                                                             </div>
-                                                        
+                                                         <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.jpg / .jpeg)</b></div>
                                                     </div>
                                                     
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            <button id="btnSave" type="submit" class="btn btn-primary">Simpan</button>
                                         </form>
                                     </div>
                                 </div>
@@ -63,6 +63,31 @@
             CKEDITOR.replace('description');
             
            
+        });
+
+        $('#image').bind('change', function() {
+        //console.log(this.files[0]);
+            let fileSizeUpload = this.files[0].size;
+            let fileSize = (fileSizeUpload / (1024 * 1024)).toFixed(2);
+            let fileType = this.files[0].type.split('/');
+            //console.log(fileType[1]);
+            if (
+                (fileSize < 10 && fileType[1] == 'jpg') 
+                || (fileSize < 10 && fileType[1] == 'jpeg')
+                
+            ) {
+                $(".alert").hide();
+                //document.getElementById("file_raport").classList.remove('is-invalid');
+                $("#btnSave").show();
+            } else {
+                $(".alert").show();
+                //document.getElementById("file_raport").classList.add('is-invalid');
+                $("#btnSave").hide();
+
+            }
+            //this.files[0].size gets the size of your file.
+            //alert(fileSize);
+
         });
     </script>
 @endsection
