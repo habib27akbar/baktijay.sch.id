@@ -44,7 +44,7 @@
                                                 </div>
                                             </div>
                                             <button id="btnSave" type="submit" class="btn btn-primary">Simpan</button>
-                                            <a href="{{route('foto.index')}}" class="btn btn-default">Kembali</a>
+                                            <a href="{{route('slider.index')}}" class="btn btn-default">Kembali</a>
                                         </form>
                                     </div>
                                 </div>
