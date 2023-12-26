@@ -65,7 +65,7 @@
                             
                             
                             <li>
-                                <a href="component-carousel.html">Visi Misi</a>
+                                <a href="{{ route('visi_misi.index') }}">Visi Misi</a>
                             </li>
                             
                             <li>
