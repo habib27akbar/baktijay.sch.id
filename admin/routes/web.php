@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DownloadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
@@ -45,4 +46,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('struktur_organisasi', StrukturOrganisasiController::class);
     Route::resource('smp_baktijaya', SmpBaktijayaController::class);
     Route::resource('smk_baktijaya', SmkBaktijayaController::class);
+    Route::resource('download', DownloadController::class);
 });

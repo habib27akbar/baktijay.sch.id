@@ -1,10 +1,10 @@
     @extends('layouts.master')
     
-    @section('title','Foto')
+    @section('title','Download')
     @section('content')
     
                 <div class="page-title">
-                    <h3>Foto</h3>
+                    <h3>Download</h3>
                 </div>
                 
                 <section class="section">
@@ -18,7 +18,7 @@
                                     <div class="card-body">
                                         @include('include.alert')
                                         
-                                        <form action="{{ route('foto.update', ['foto' => $foto['id']]) }}" method="post" enctype="multipart/form-data">
+                                        <form action="{{ route('download.update', ['download' => $download['id']]) }}" method="post" enctype="multipart/form-data">
                                              @csrf
                                              @method('PUT')
                                             <div class="row">
@@ -28,24 +28,24 @@
                                                             <label for="keterangan" class="form-label">Keterangan</label>
                                                         </div>
                                                         <div class="col-lg-11 col-11">
-                                                            <input type="text" id="keterangan" name="keterangan" class="form-control" value="{{ $foto['keterangan'] }}">
+                                                            <input type="text" id="keterangan" name="keterangan" class="form-control" value="{{ $download['keterangan'] }}">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row align-items-center">
                                                             <div class="col-lg-1 col-1">
-                                                                <label class="col-form-label">Gambar</label>
+                                                                <label class="col-form-label">File</label>
                                                             </div>
                                                             <div class="col-lg-4 col-4">
                                                                 <input type="file" id="image" class="form-control" name="image">
-                                                                <input type="hidden" name="image_old" value="{{ $foto['image'] }}">
+                                                                <input type="hidden" name="image_old" value="{{ $download['image'] }}">
                                                             </div>
-                                                         <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.jpg / .jpeg)</b></div>
+                                                         <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.pdf)</b></div>
                                                     </div>
                                                     
                                                 </div>
                                             </div>
                                             <button id="btnSave" type="submit" class="btn btn-primary">Simpan</button>
-                                            <a href="{{route('foto.index')}}" class="btn btn-default">Kembali</a>
+                                            <a href="{{route('video.index')}}" class="btn btn-default">Kembali</a>
                                         </form>
                                     </div>
                                 </div>
@@ -70,8 +70,8 @@
             let fileType = this.files[0].type.split('/');
             //console.log(fileType[1]);
             if (
-                (fileSize < 10 && fileType[1] == 'jpg') 
-                || (fileSize < 10 && fileType[1] == 'jpeg')
+                fileSize < 10 && fileType[1] == 'pdf' 
+               
                 
             ) {
                 $(".alert").hide();

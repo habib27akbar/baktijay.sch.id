@@ -134,7 +134,7 @@
                             </li>
                             
                             <li>
-                                <a href="component-extra-divider.html">Download</a>
+                                <a href="{{ route('download.index') }}">Download</a>
                             </li>
                             
                         </ul>
