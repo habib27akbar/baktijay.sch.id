@@ -34,6 +34,7 @@
                                                             <div class="col-lg-4 col-4">
                                                                 <input type="file" id="image" class="form-control" name="image">
                                                                 <input type="hidden" name="image_old" value="{{ $sejarah[0]->image }}">
+                                                                <img src="{{ asset('storage/'. $sejarah[0]->image) }}" alt="" srcset="">
                                                             </div>
                                                          <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.jpg / .jpeg)</b></div>
                                                     </div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFoto extends Migration
+class CreateSlider extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateFoto extends Migration
      */
     public function up()
     {
-        Schema::create('foto', function (Blueprint $table) {
+        Schema::create('slider', function (Blueprint $table) {
             $table->id();
+            $table->text('description')->nullable();
             $table->string('image');
-            $table->string('keterangan')->nullable();
-            $table->integer('status');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateFoto extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('foto');
+        Schema::dropIfExists('slider');
     }
 }
