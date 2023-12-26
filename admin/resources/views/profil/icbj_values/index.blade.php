@@ -24,7 +24,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="description" class="form-label">Sejarah</label>
+                                                        <label for="description" class="form-label">ICBJ Value</label>
                                                         <textarea class="form-control" name="description" id="description">{{ $icbj_value[0]->description }}</textarea>
                                                     </div>
                                                     <div class="form-group row align-items-center">
