@@ -31,7 +31,7 @@
 
                             @if ($errors->has('captcha'))
                                 <div class="alert alert-danger">
-                                    {{ $errors->first('captcha') }}
+                                    Captcha Salah !
                                 </div>
                             @endif
                            
