@@ -59,7 +59,7 @@
                             </li>
                             
                             <li>
-                                <a href="component-badge.html">ICBJ Values</a>
+                                <a href="{{ route('icbj_value.index') }}">ICBJ Values</a>
                             </li>
                             
                             

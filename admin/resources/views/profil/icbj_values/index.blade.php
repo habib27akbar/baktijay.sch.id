@@ -1,10 +1,10 @@
     @extends('layouts.master')
     
-    @section('title','Sejarah')
+    @section('title','ICBJ Values')
     @section('content')
     
                 <div class="page-title">
-                    <h3>Sejarah</h3>
+                    <h3>ICBJ Values</h3>
                 </div>
                 
                 <section class="section">
@@ -18,14 +18,14 @@
                                     <div class="card-body">
                                         @include('include.alert')
                                         
-                                        <form action="{{ route('sejarah.update', ['sejarah' => $sejarah[0]->id]) }}" method="post" enctype="multipart/form-data">
+                                        <form action="{{ route('icbj_value.update', ['icbj_value' => $icbj_value[0]->id]) }}" method="post" enctype="multipart/form-data">
                                              @csrf
                                              @method('PUT')
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="description" class="form-label">Sejarah</label>
-                                                        <textarea class="form-control" name="description" id="description">{{ $sejarah[0]->description }}</textarea>
+                                                        <textarea class="form-control" name="description" id="description">{{ $icbj_value[0]->description }}</textarea>
                                                     </div>
                                                     <div class="form-group row align-items-center">
                                                             <div class="col-lg-1 col-1">
@@ -33,8 +33,8 @@
                                                             </div>
                                                             <div class="col-lg-4 col-4">
                                                                 <input type="file" id="image" class="form-control" name="image">
-                                                                <input type="hidden" name="image_old" value="{{ $sejarah[0]->image }}">
-                                                                <img style="width: 30%" src="{{ asset('storage/'. $sejarah[0]->image) }}" alt="" srcset="">
+                                                                <input type="hidden" name="image_old" value="{{ $icbj_value[0]->image }}">
+                                                                <img style="width: 30%" src="{{ asset('storage/'. $icbj_value[0]->image) }}" alt="" srcset="">
                                                             </div>
                                                          <div class="alert" style="display: none;">File anda melebihi 10 MB <b>atau</b> file anda bukan <b>(.jpg / .jpeg)</b></div>
                                                     </div>
