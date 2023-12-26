@@ -88,7 +88,7 @@
                         <ul class="submenu ">
                             
                             <li>
-                                <a href="component-extra-avatar.html">SMP Bakti Jaya</a>
+                                <a href="{{ route('smp_baktijaya.index') }}">SMP Bakti Jaya</a>
                             </li>
                             
                             <li>
