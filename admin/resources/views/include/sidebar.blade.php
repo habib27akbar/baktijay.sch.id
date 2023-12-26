@@ -92,7 +92,7 @@
                             </li>
                             
                             <li>
-                                <a href="component-extra-divider.html">SMK Bakti Jaya</a>
+                                <a href="{{ route('smk_baktijaya.index') }}">SMK Bakti Jaya</a>
                             </li>
                             
                         </ul>

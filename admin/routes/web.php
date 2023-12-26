@@ -9,6 +9,7 @@ use App\Http\Controllers\FotoController;
 use App\Http\Controllers\IcbjValueController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\SmpBaktijayaController;
+use App\Http\Controllers\SmkBaktijayaController;
 use App\Http\Controllers\StrukturOrganisasiController;
 use App\Http\Controllers\VisiMisiController;
 
@@ -41,4 +42,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('visi_misi', VisiMisiController::class);
     Route::resource('struktur_organisasi', StrukturOrganisasiController::class);
     Route::resource('smp_baktijaya', SmpBaktijayaController::class);
+    Route::resource('smk_baktijaya', SmkBaktijayaController::class);
 });
