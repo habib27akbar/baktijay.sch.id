@@ -1,6 +1,6 @@
     @extends('layouts.master')
     
-    @section('title','Sejarah')
+    @section('title','Slider')
     @section('content')
     
                 <div class="page-title">

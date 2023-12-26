@@ -44,9 +44,9 @@ class SliderController extends Controller
     {
         $image = $request->file('image')->store('images');
         $storeData = [
-            'keterangan' => $request->input('keterangan'),
+            'description' => $request->input('description'),
             'image' => $image,
-            'status' => 1
+            //'status' => 1
         ];
         SliderModel::create($storeData);
         return redirect('slider')->with('alert-success', 'Success Tambah Data');
@@ -63,7 +63,7 @@ class SliderController extends Controller
         //ddd($request);
 
         $updateDate = [
-            'keterangan' => $request->input('keterangan'),
+            'description' => $request->input('description'),
             'image' => $image,
             'status' => 1
         ];

@@ -35,7 +35,7 @@
 
                     <li class="sidebar-item">
                         <a href="{{ route('slider.index') }}" class='sidebar-link'>
-                            <i data-feather="home" width="20"></i> 
+                            <i data-feather="framer" width="20"></i> 
                             <span>Slider</span>
                         </a>
                         

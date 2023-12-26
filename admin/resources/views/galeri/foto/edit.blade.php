@@ -1,10 +1,10 @@
     @extends('layouts.master')
     
-    @section('title','Sejarah')
+    @section('title','Foto')
     @section('content')
     
                 <div class="page-title">
-                    <h3>Sejarah</h3>
+                    <h3>Foto</h3>
                 </div>
                 
                 <section class="section">

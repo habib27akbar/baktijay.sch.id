@@ -27,7 +27,7 @@
                                          <table class='table table-striped' id="table1">
                                             <thead>
                                                 <tr>
-                                                    <th>Action</th>
+                                                    <th style="width: 26%%">Action</th>
                                                     <th>No</th>
                                                     <th>Gambar</th>
                                                     <th>Keterangan</th>
