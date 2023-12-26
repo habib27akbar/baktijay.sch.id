@@ -69,7 +69,7 @@
                             </li>
                             
                             <li>
-                                <a href="component-dropdowns.html">Struktur Organisasi</a>
+                                <a href="{{ route('struktur_organisasi.index') }}">Struktur Organisasi</a>
                             </li>
                             
                             
