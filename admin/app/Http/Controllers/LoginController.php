@@ -17,12 +17,13 @@ class LoginController extends Controller
     }
     public function authenticate(Request $request): RedirectResponse
     {
-        $credentials = $request->validate([
+        $request->validate([
             'email' => 'required|email',
             'password' => 'required',
+            'captcha' => 'required|captcha'
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($request->only('email', 'password'))) {
             $request->session()->regenerate();
 
             return redirect()->intended('home');

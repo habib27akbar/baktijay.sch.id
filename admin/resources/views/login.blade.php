@@ -28,8 +28,16 @@
                                {{ session('loginError') }}
                             </div>
                             @endif
+
+                            @if ($errors->has('captcha'))
+                                <div class="alert alert-danger">
+                                    {{ $errors->first('captcha') }}
+                                </div>
+                            @endif
+                           
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
+                               
                                 <div class="form-group position-relative has-icon-left">
                                     <label for="username">Email</label>
                                     <div class="position-relative">
@@ -62,6 +70,29 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group position-relative has-icon-left">
+                                    <div class="clearfix">
+                                        <label for="password">Captcha</label>
+                                        {{-- <a href="auth-forgot-password.html" class='float-right'>
+                                            <small>Forgot password?</small>
+                                        </a> --}}
+                                    </div>
+                                    <div class="position-relative">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <img src="{{ captcha_src() }}" alt="" srcset="">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                 
+                                                    <input type="text" name="captcha" id="captcha" class="form-control"  required>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               
+                               
                                
                                 <div class="clearfix">
                                     <button class="btn btn-primary float-right">Login</button>
