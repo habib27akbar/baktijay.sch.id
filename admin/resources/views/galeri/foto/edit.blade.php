@@ -58,16 +58,9 @@
     @endsection
 
 @section('js')
-    <script src="https://cdn.ckeditor.com/4.4.3/full/ckeditor.js"></script>
+   
     <script>
-        $(function() {
-            // Replace the <textarea id="editor1"> with a CKEditor
-            // instance, using default configuration.
-
-            CKEDITOR.replace('description');
-            
-           
-        });
+       
 
         $('#image').bind('change', function() {
         //console.log(this.files[0]);

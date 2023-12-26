@@ -112,7 +112,7 @@
                             </li>
                             
                             <li>
-                                <a href="component-extra-divider.html">Video</a>
+                                <a href="{{ route('video.index') }}">Video</a>
                             </li>
                             
                         </ul>
@@ -127,10 +127,10 @@
                         
                         <ul class="submenu ">
                             <li>
-                                <a href="component-extra-divider.html">Guru</a>
+                                <a href="https://baktijaya.sch.id/guru">Guru</a>
                             </li>
                             <li>
-                                <a href="component-extra-avatar.html">Siswa</a>
+                                <a href="https://baktijaya.sch.id/siswa">Siswa</a>
                             </li>
                             
                             <li>

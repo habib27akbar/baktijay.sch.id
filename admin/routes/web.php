@@ -11,6 +11,7 @@ use App\Http\Controllers\SliderController;
 use App\Http\Controllers\SmpBaktijayaController;
 use App\Http\Controllers\SmkBaktijayaController;
 use App\Http\Controllers\StrukturOrganisasiController;
+use App\Http\Controllers\VideoController;
 use App\Http\Controllers\VisiMisiController;
 
 /*
@@ -37,6 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::resource('sejarah', SejarahController::class);
     Route::resource('foto', FotoController::class);
+    Route::resource('video', VideoController::class);
     Route::resource('slider', SliderController::class);
     Route::resource('icbj_value', IcbjValueController::class);
     Route::resource('visi_misi', VisiMisiController::class);
