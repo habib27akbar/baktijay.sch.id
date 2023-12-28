@@ -16,8 +16,6 @@ class CreateMstThnakademik extends Migration
         Schema::create('mst_thnakademik', function (Blueprint $table) {
             $table->id();
             $table->string('kode')->unique();
-            $table->string('nama');
-            $table->string('periode');
             $table->timestamps();
         });
     }

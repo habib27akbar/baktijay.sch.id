@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\DownloadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -8,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\FotoController;
 use App\Http\Controllers\IcbjValueController;
+use App\Http\Controllers\MsTahunAkademikController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\SmpBaktijayaController;
 use App\Http\Controllers\SmkBaktijayaController;
@@ -47,4 +49,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('smp_baktijaya', SmpBaktijayaController::class);
     Route::resource('smk_baktijaya', SmkBaktijayaController::class);
     Route::resource('download', DownloadController::class);
-});
+    Route::resource('thn_akademik', MsTahunAkademikController::class);
+    Route::post('post_check_thnakad', [AjaxController::class, 'post_check_thnakad'])->name('post_check_thnakad');
+});;

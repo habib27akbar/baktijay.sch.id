@@ -158,7 +158,7 @@
                         </a>
                         <ul style="margin-left: -25px" class="submenu ">
                              <li>
-                                <a href="component-extra-avatar.html">Tahun Akademik</a>
+                                <a href="{{ route('thn_akademik.index') }}">Tahun Akademik</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Sekolah</a>
