@@ -32,152 +32,124 @@
                         
                     </li>
 
-
-                    <li class="sidebar-item">
-                        <a href="{{ route('slider.index') }}" class='sidebar-link'>
-                            <i data-feather="framer" width="20"></i> 
-                            <span>Slider</span>
-                        </a>
-                        
-                    </li>
-
-                
-                
-                
-                    <li class="sidebar-item  has-sub">
-                        <a href="#" class='sidebar-link'>
-                            <i data-feather="user" width="20"></i> 
-                            <span>Profil</span>
-                        </a>
-                        
-                        <ul class="submenu ">
-
-                
-                            
-                            <li>
-                                <a href="{{ route('sejarah.index') }}">Sejarah</a>
-                            </li>
-                            
-                            <li>
-                                <a href="{{ route('icbj_value.index') }}">ICBJ Values</a>
-                            </li>
-                            
-                            
-                            
-                            <li>
-                                <a href="{{ route('visi_misi.index') }}">Visi Misi</a>
-                            </li>
-                            
-                            <li>
-                                <a href="{{ route('struktur_organisasi.index') }}">Struktur Organisasi</a>
-                            </li>
-                            
-                            
-                            
-                        </ul>
-                        
-                    </li>
-
-                
-                    <li class="sidebar-item  has-sub">
-                        <a href="#" class='sidebar-link'>
-                            <i data-feather="book" width="20"></i> 
-                            <span>Akademik</span>
-                        </a>
-                        
-                        <ul class="submenu ">
-                            
-                            <li>
-                                <a href="{{ route('smp_baktijaya.index') }}">SMP Bakti Jaya</a>
-                            </li>
-                            
-                            <li>
-                                <a href="{{ route('smk_baktijaya.index') }}">SMK Bakti Jaya</a>
-                            </li>
-                            
-                        </ul>
-                        
-                    </li>
-
-                    <li class="sidebar-item  has-sub">
-                        <a href="#" class='sidebar-link'>
-                            <i data-feather="image" width="20"></i> 
-                            <span>Galeri</span>
-                        </a>
-                        
-                        <ul class="submenu ">
-                            
-                            <li>
-                                <a href="{{ route('foto.index') }}">Foto</a>
-                            </li>
-                            
-                            <li>
-                                <a href="{{ route('video.index') }}">Video</a>
-                            </li>
-                            
-                        </ul>
-                        
-                    </li>
-
-                    <li class="sidebar-item  has-sub">
+                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
                             <i data-feather="globe" width="20"></i> 
-                            <span>Portal</span>
+                            <span>Website</span>
                         </a>
+                        <ul style="margin-left: -25px" class="submenu ">
+
+                            <li class="sidebar-item  has-sub">
+                                <a href="#" class='sidebar-link'>
+                                    <span>Profil</span>
+                                </a>
+                                <ul class="submenu ">
+                                    <li>
+                                        <a href="{{ route('sejarah.index') }}">Sejarah</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="{{ route('icbj_value.index') }}">ICBJ Values</a>
+                                    </li>
+                                    
+                                    
+                                    
+                                    <li>
+                                        <a href="{{ route('visi_misi.index') }}">Visi Misi</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="{{ route('struktur_organisasi.index') }}">Struktur Organisasi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="{{ route('slider.index') }}" class='sidebar-link'><span>Slider</span></a>
+                            </li>
+
+                            <li class="sidebar-item  has-sub">
+                                <a href="#" class='sidebar-link'>
+                                    <span>Akademik</span>
+                                </a>
+                                <ul class="submenu ">
+                                    <li>
+                                        <a href="{{ route('smp_baktijaya.index') }}">SMP Bakti Jaya</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="{{ route('smk_baktijaya.index') }}">SMK Bakti Jaya</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-item  has-sub">
+                                <a href="#" class='sidebar-link'>
+                                    <span>Galeri</span>
+                                </a>
+                                <ul class="submenu ">
+                                    <li>
+                                        <a href="{{ route('foto.index') }}">Foto</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="{{ route('video.index') }}">Video</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+                            <li class="sidebar-item  has-sub">
+                                <a href="#" class='sidebar-link'>
+                                    <span>Portal</span>
+                                </a>
+                                <ul class="submenu ">
+                                    <li>
+                                        <a href="https://baktijaya.sch.id/guru">Guru</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://baktijaya.sch.id/siswa">Siswa</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="{{ route('download.index') }}">Download</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            
+                            <li class="sidebar-item  has-sub">
+                                <a href="#" class='sidebar-link'>
+                                    <span>PSB Online</span>
+                                </a>
+                                <ul class="submenu ">
+                                    <li>
+                                        <a href="component-extra-avatar.html">Biaya Pendaftaran</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="component-extra-divider.html">Prosedur Pendaftaran</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="component-extra-divider.html">PSB SMP Bakti Jaya</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="component-extra-divider.html">PSB SMK Bakti Jaya</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li>
+                                <a href="{{ route('home') }}" class='sidebar-link'><span>Kontak</span></a>
+                            </li>
                         
-                        <ul class="submenu ">
-                            <li>
-                                <a href="https://baktijaya.sch.id/guru">Guru</a>
-                            </li>
-                            <li>
-                                <a href="https://baktijaya.sch.id/siswa">Siswa</a>
-                            </li>
-                            
-                            <li>
-                                <a href="{{ route('download.index') }}">Download</a>
-                            </li>
-                            
                         </ul>
                         
-                    </li>
-
-
-                    <li class="sidebar-item  has-sub">
-                        <a href="#" class='sidebar-link'>
-                            <i data-feather="users" width="20"></i> 
-                            <span>PSB Online</span>
-                        </a>
-                        
-                        <ul class="submenu ">
-                            
-                            <li>
-                                <a href="component-extra-avatar.html">Biaya Pendaftaran</a>
-                            </li>
-                            
-                            <li>
-                                <a href="component-extra-divider.html">Prosedur Pendaftaran</a>
-                            </li>
-
-                            <li>
-                                <a href="component-extra-divider.html">PSB SMP Bakti Jaya</a>
-                            </li>
-
-                            <li>
-                                <a href="component-extra-divider.html">PSB SMK Bakti Jaya</a>
-                            </li>
-                            
-                        </ul>
-                        
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a href="{{ route('home') }}" class='sidebar-link'>
-                            <i data-feather="phone" width="20"></i> 
-                            <span>Kontak</span>
-                        </a>
-                        
-                    </li>
-                
+                     </li>
                 
                     
 
