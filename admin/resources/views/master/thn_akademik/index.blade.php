@@ -41,7 +41,7 @@
                                                         <td>
                                                             <div class="btn-group">
                                                                 <form method="POST" action="{{ route('thn_akademik.destroy', ['thn_akademik' => $value->id]) }}">
-                                                                    <a href="{{ route('thn_akademik.edit',$value->id) }}" class="btn btn-warning">Edit</a>
+                                                                    
                                                                     @method('DELETE')
                                                                     @csrf
                                                                     <button onclick="confirm('apakah anda yakin ?')" class="btn btn-danger">Delete</button>
