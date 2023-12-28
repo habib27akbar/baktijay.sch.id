@@ -150,6 +150,42 @@
                         </ul>
                         
                      </li>
+
+                     <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                            <i data-feather="menu" width="20"></i> 
+                            <span>Master</span>
+                        </a>
+                        <ul style="margin-left: -25px" class="submenu ">
+                             <li>
+                                <a href="component-extra-avatar.html">Tahun Akademik</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Sekolah</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Siswa</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Guru</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Mata Pelajaran</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Rombel</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Ruang</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Waktu</a>
+                             </li>
+                             <li>
+                                <a href="component-extra-avatar.html">Jenis Pembayaran</a>
+                             </li>
+                        </ul>
+                     </li>
                 
                     
 
