@@ -170,7 +170,7 @@
                                 <a href="{{ route('guru.index') }}">Guru</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Mata Pelajaran</a>
+                                <a href="{{ route('mapel.index') }}">Mata Pelajaran</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Rombel</a>
