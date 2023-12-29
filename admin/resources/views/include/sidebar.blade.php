@@ -179,7 +179,7 @@
                                 <a href="{{ route('ruang.index') }}">Ruang</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Waktu</a>
+                                <a href="{{ route('waktu.index') }}">Waktu</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Jenis Pembayaran</a>

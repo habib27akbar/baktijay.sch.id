@@ -16,6 +16,7 @@ use App\Http\Controllers\MsRuangController;
 use App\Http\Controllers\MsSekolahController;
 use App\Http\Controllers\MsSiswaController;
 use App\Http\Controllers\MsTahunAkademikController;
+use App\Http\Controllers\MsWaktuController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\SmpBaktijayaController;
 use App\Http\Controllers\SmkBaktijayaController;
@@ -63,4 +64,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('mapel', MsMapelController::class);
     Route::resource('rombel', MsRombelController::class);
     Route::resource('ruang', MsRuangController::class);
+    Route::resource('waktu', MsWaktuController::class);
+    Route::post('post_check_waktu', [AjaxController::class, 'post_check_waktu'])->name('post_check_waktu');
 });;
