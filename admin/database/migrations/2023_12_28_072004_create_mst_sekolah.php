@@ -16,7 +16,7 @@ class CreateMstSekolah extends Migration
         Schema::create('mst_sekolah', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('jenjang');
+            $table->string('jenjang')->nullable();
             $table->timestamps();
         });
     }
