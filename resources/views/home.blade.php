@@ -3,9 +3,7 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
-            @php
-            //dd($data_slider);    
-            @endphp
+            
             @foreach ($data_slider as $slider)
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="{{ url('admin/public/storage/'.$slider->image) }}" alt="">
