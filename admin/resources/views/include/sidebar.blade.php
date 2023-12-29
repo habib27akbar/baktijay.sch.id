@@ -161,7 +161,7 @@
                                 <a href="{{ route('thn_akademik.index') }}">Tahun Akademik</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Sekolah</a>
+                                <a href="{{ route('sekolah.index') }}">Sekolah</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Siswa</a>
