@@ -182,7 +182,7 @@
                                 <a href="{{ route('waktu.index') }}">Waktu</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Jenis Pembayaran</a>
+                                <a href="{{ route('jenis_pembayaran.index') }}">Jenis Pembayaran</a>
                              </li>
                         </ul>
                      </li>
