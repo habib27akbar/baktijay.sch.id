@@ -31,7 +31,11 @@
                                                             <select name="id_sekolah" id="id_sekolah" class="form-control" required>
                                                                 <option value="">--Pilih Data--</option>
                                                                 @foreach ($data_sekolah as $sekolah)
-                                                                    <option value="{{ $sekolah->id }}">{{ $sekolah->nama }}</option>
+                                                                    @if ($sekolah->id == 3)
+                                                                        
+                                                                    @else
+                                                                        <option value="{{ $sekolah->id }}">{{ $sekolah->nama }}</option>
+                                                                    @endif
                                                                 @endforeach
                                                             </select>
                                                         </div>

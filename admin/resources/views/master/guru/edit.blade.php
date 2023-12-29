@@ -34,7 +34,7 @@
                                                                 @foreach ($data_sekolah as $sekolah)
                                                                     <option {{ $data['id_sekolah'] == $sekolah->id ?'selected':'' }} value="{{ $sekolah->id }}">{{ $sekolah->nama }}</option>
                                                                 @endforeach
-                                                                    <option {{ $data['id_sekolah'] == 3 ?'selected':'' }} value="3">Keduanya</option>
+                                                                   
                                                             </select>
                                                         </div>
                                                     </div>

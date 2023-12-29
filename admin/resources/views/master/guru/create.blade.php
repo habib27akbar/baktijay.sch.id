@@ -33,7 +33,7 @@
                                                                 @foreach ($data_sekolah as $sekolah)
                                                                     <option value="{{ $sekolah->id }}">{{ $sekolah->nama }}</option>
                                                                 @endforeach
-                                                                    <option value="3">Keduanya</option>
+                                                                   
                                                             </select>
                                                         </div>
                                                     </div>
