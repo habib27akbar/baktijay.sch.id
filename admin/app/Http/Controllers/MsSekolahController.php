@@ -49,7 +49,7 @@ class MsSekolahController extends Controller
     public function update(Request $request, $id)
     {
 
-        SekolahModel::where('id', $id)->update($request->all());
+        SekolahModel::where('id', $id)->update($request->except(['_token', '_method']));
         return redirect('sekolah')->with('alert-success', 'Success Update Data');
     }
 

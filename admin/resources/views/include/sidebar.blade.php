@@ -173,7 +173,7 @@
                                 <a href="{{ route('mapel.index') }}">Mata Pelajaran</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Rombel</a>
+                                <a href="{{ route('rombel.index') }}">Rombel</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Ruang</a>
