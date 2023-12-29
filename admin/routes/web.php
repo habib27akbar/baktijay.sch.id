@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\FotoController;
 use App\Http\Controllers\IcbjValueController;
+use App\Http\Controllers\MsGuruController;
 use App\Http\Controllers\MsSekolahController;
 use App\Http\Controllers\MsSiswaController;
 use App\Http\Controllers\MsTahunAkademikController;
@@ -55,4 +56,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('post_check_thnakad', [AjaxController::class, 'post_check_thnakad'])->name('post_check_thnakad');
     Route::resource('sekolah', MsSekolahController::class);
     Route::resource('siswa', MsSiswaController::class);
+    Route::resource('guru', MsGuruController::class);
 });;
