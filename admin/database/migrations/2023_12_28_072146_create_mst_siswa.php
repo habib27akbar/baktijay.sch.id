@@ -15,7 +15,8 @@ class CreateMstSiswa extends Migration
     {
         Schema::create('mst_siswa', function (Blueprint $table) {
             $table->id();
-            //$table->string('nis')->unique();
+            $table->string('id_sekolah');
+            $table->string('kd_angkatan', 5);
             $table->string('nama');
             $table->string('jk', 1);
             $table->string('nisn', 10);
@@ -26,11 +27,11 @@ class CreateMstSiswa extends Migration
             $table->string('alamat');
             $table->string('rt')->nullable();
             $table->string('rw')->nullable();
+            $table->string('kodepos')->nullable();
             $table->string('kecamatan', 100);
             $table->string('kelurahan', 100);
-            $table->string('kodepos')->nullable();
             $table->string('jenis_tinggal');
-            $table->string('alat_transportasi');
+            $table->string('alat_transportasi')->nullable();
             $table->string('telepon')->nullable();
             $table->string('hp')->nullable();
             $table->string('skhun')->nullable();
@@ -48,7 +49,7 @@ class CreateMstSiswa extends Migration
             $table->string('pekerjaan_ibu')->nullable();
             $table->string('penghasilan_ibu')->nullable();
             $table->string('nik_ibu', 16);
-            $table->string('rombel');
+            $table->string('rombel')->nullable();
             $table->string('no_ujian_nasional')->nullable();
             $table->string('no_seri_ijazah')->nullable();
             $table->string('penerima_kip');
@@ -66,7 +67,6 @@ class CreateMstSiswa extends Migration
             $table->string('anak_ke')->nullable();
             $table->string('lintang')->nullable();
             $table->string('bujur')->nullable();
-            $table->string('id_sekolah');
             $table->timestamps();
         });
     }

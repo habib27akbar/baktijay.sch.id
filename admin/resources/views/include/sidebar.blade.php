@@ -164,7 +164,7 @@
                                 <a href="{{ route('sekolah.index') }}">Sekolah</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Siswa</a>
+                                <a href="{{ route('siswa.index') }}">Siswa</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Guru</a>
