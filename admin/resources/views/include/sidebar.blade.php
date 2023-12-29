@@ -144,7 +144,7 @@
                             
 
                             <li>
-                                <a href="{{ route('home') }}" class='sidebar-link'><span>Kontak</span></a>
+                                <a href="{{ route('kontak.index') }}" class='sidebar-link'><span>Kontak</span></a>
                             </li>
                         
                         </ul>

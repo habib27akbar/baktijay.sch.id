@@ -9,6 +9,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\FotoController;
 use App\Http\Controllers\IcbjValueController;
+use App\Http\Controllers\KontakController;
 use App\Http\Controllers\MsGuruController;
 use App\Http\Controllers\MsJenisPembayaranController;
 use App\Http\Controllers\MsMapelController;
@@ -68,4 +69,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('waktu', MsWaktuController::class);
     Route::post('post_check_waktu', [AjaxController::class, 'post_check_waktu'])->name('post_check_waktu');
     Route::resource('jenis_pembayaran', MsJenisPembayaranController::class);
+    Route::resource('kontak', KontakController::class);
 });;

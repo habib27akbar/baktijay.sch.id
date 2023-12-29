@@ -15,9 +15,14 @@ class CreateKontak extends Migration
     {
         Schema::create('kontak', function (Blueprint $table) {
             $table->id();
-            $table->text('description');
-            $table->string('image')->nullable();
-            $table->integer('status');
+            $table->text('alamat');
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('youtube')->nullable();
+            $table->string('telepon')->nullable();
+            $table->string('fax')->nullable();
+            //$table->integer('status');
             $table->timestamps();
         });
     }
