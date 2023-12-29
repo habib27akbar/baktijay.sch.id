@@ -15,7 +15,7 @@ class CreateMstRuang extends Migration
     {
         Schema::create('mst_ruang', function (Blueprint $table) {
             $table->id();
-            $table->string('kode', 10)->unique();
+
             $table->string('nama', 20);
             $table->timestamps();
         });

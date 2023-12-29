@@ -176,7 +176,7 @@
                                 <a href="{{ route('rombel.index') }}">Rombel</a>
                              </li>
                              <li>
-                                <a href="component-extra-avatar.html">Ruang</a>
+                                <a href="{{ route('ruang.index') }}">Ruang</a>
                              </li>
                              <li>
                                 <a href="component-extra-avatar.html">Waktu</a>

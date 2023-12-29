@@ -12,6 +12,7 @@ use App\Http\Controllers\IcbjValueController;
 use App\Http\Controllers\MsGuruController;
 use App\Http\Controllers\MsMapelController;
 use App\Http\Controllers\MsRombelController;
+use App\Http\Controllers\MsRuangController;
 use App\Http\Controllers\MsSekolahController;
 use App\Http\Controllers\MsSiswaController;
 use App\Http\Controllers\MsTahunAkademikController;
@@ -61,4 +62,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('guru', MsGuruController::class);
     Route::resource('mapel', MsMapelController::class);
     Route::resource('rombel', MsRombelController::class);
+    Route::resource('ruang', MsRuangController::class);
 });;
