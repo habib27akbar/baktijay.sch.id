@@ -25,7 +25,7 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akademik</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">SMP Bakti Jaya</a>
+                    <a href="{{ route('smp_baktijaya.index') }}" class="dropdown-item">SMP Bakti Jaya</a>
                     <a href="testimonial.html" class="dropdown-item">SMK Bakti Jaya</a>
                     
                 </div>
