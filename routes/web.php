@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IcbjValueController;
+use App\Http\Controllers\SejarahController;
+
 /*
 |-------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +17,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::resource('sejarah', SejarahController::class);
+Route::resource('icbj_value', IcbjValueController::class);

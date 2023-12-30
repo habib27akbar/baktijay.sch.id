@@ -76,7 +76,7 @@
                     <p class="mb-4">{!! strlen($sejarah[0]->description) > 500 ? substr($sejarah[0]->description, 0,500).'...':$sejarah[0]->description !!}</p>
                     
                     
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('sejarah.index') }}">Read More</a>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
                     <p class="mb-4">{!! strlen($icbj_value[0]->description) > 500 ? substr($icbj_value[0]->description, 0,500).'...':$icbj_value[0]->description !!}</p>
                     
                     
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('icbj_value.index') }}">Read More</a>
                 </div>
             </div>
         </div>

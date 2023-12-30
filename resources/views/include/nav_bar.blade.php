@@ -11,12 +11,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Sejarah</a>
-                    <a href="testimonial.html" class="dropdown-item">ICBJ Values</a>
+                    <a href="{{ route('sejarah.index') }}" class="dropdown-item">Sejarah</a>
+                    <a href="{{ route('icbj_value.index') }}" class="dropdown-item">ICBJ Values</a>
                     <a href="404.html" class="dropdown-item">Visi Misi</a>
                     <a href="404.html" class="dropdown-item">Struktur Organisasi</a>
                 </div>
