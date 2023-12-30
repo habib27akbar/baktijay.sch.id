@@ -17,7 +17,7 @@
                 <div class="dropdown-menu fade-down m-0">
                     <a href="{{ route('sejarah.index') }}" class="dropdown-item">Sejarah</a>
                     <a href="{{ route('icbj_value.index') }}" class="dropdown-item">ICBJ Values</a>
-                    <a href="404.html" class="dropdown-item">Visi Misi</a>
+                    <a href="{{ route('visi_misi.index') }}" class="dropdown-item">Visi Misi</a>
                     <a href="404.html" class="dropdown-item">Struktur Organisasi</a>
                 </div>
             </div>
