@@ -10,16 +10,14 @@ class KontakController extends Controller
     public function index()
     {
         $kontak = KontakModel::where('id', 1)->get();
-        //dd($sejarah);
+
         return view('kontak.index', compact('kontak'));
     }
 
     public function update(Request $request, $id)
     {
 
-        //return $request->file('image')->store('images');
 
-        //ddd($request);
 
         $updateDate = [
             'alamat' => $request->input('alamat'),

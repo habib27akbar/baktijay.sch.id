@@ -22,7 +22,6 @@ class CreateKontak extends Migration
             $table->string('youtube')->nullable();
             $table->string('telepon')->nullable();
             $table->string('fax')->nullable();
-            //$table->integer('status');
             $table->timestamps();
         });
     }

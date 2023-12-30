@@ -82,7 +82,7 @@
                                     </li>
                                 </ul>
                             </li>
-
+<!-- -->
                             <li class="sidebar-item  has-sub">
                                 <a href="#" class='sidebar-link'>
                                     <span>Galeri</span>
