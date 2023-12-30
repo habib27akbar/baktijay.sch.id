@@ -35,7 +35,7 @@
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Galeri</a>
                 <div class="dropdown-menu fade-down m-0">
                     <a href="{{ route('foto.index') }}" class="dropdown-item">Foto</a>
-                    <a href="testimonial.html" class="dropdown-item">Video</a>
+                    <a href="{{ route('video.index') }}" class="dropdown-item">Video</a>
                     
                 </div>
             </div>
@@ -43,8 +43,8 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portal</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Guru</a>
-                    <a href="testimonial.html" class="dropdown-item">Siswa</a>
+                    <a href="https://baktijaya.sch.id/guru" class="dropdown-item">Guru</a>
+                    <a href="https://baktijaya.sch.id/siswwa" class="dropdown-item">Siswa</a>
                     <a href="testimonial.html" class="dropdown-item">Download</a>
                 </div>
             </div>

@@ -8,6 +8,7 @@ use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\SmkBaktijayaController;
 use App\Http\Controllers\SmpBaktijayaController;
 use App\Http\Controllers\StrukturOrganisasiController;
+use App\Http\Controllers\VideoController;
 use App\Http\Controllers\VisiMisiController;
 
 /*
@@ -29,3 +30,4 @@ Route::resource('struktur_organisasi', StrukturOrganisasiController::class);
 Route::resource('smp_baktijaya', SmpBaktijayaController::class);
 Route::resource('smk_baktijaya', SmkBaktijayaController::class);
 Route::resource('foto', FotoController::class);
+Route::resource('video', VideoController::class);
