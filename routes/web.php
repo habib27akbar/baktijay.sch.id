@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FotoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IcbjValueController;
@@ -27,3 +28,4 @@ Route::resource('visi_misi', VisiMisiController::class);
 Route::resource('struktur_organisasi', StrukturOrganisasiController::class);
 Route::resource('smp_baktijaya', SmpBaktijayaController::class);
 Route::resource('smk_baktijaya', SmkBaktijayaController::class);
+Route::resource('foto', FotoController::class);

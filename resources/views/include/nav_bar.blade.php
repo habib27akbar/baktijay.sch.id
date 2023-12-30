@@ -34,7 +34,7 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Galeri</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Foto</a>
+                    <a href="{{ route('foto.index') }}" class="dropdown-item">Foto</a>
                     <a href="testimonial.html" class="dropdown-item">Video</a>
                     
                 </div>
