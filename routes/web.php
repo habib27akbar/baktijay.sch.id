@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IcbjValueController;
 use App\Http\Controllers\SejarahController;
+use App\Http\Controllers\StrukturOrganisasiController;
 use App\Http\Controllers\VisiMisiController;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::resource('sejarah', SejarahController::class);
 Route::resource('icbj_value', IcbjValueController::class);
 Route::resource('visi_misi', VisiMisiController::class);
+Route::resource('struktur_organisasi', StrukturOrganisasiController::class);
