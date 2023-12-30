@@ -1,7 +1,7 @@
     @extends('layouts.app')
-    @if ($smp_baktijaya[0]->image)
+    @if ($smk_baktijaya[0]->image)
         @php
-            $image = url('admin/public/storage/'.$smp_baktijaya[0]->image);
+            $image = url('admin/public/storage/'.$smk_baktijaya[0]->image);
         @endphp
         
     @else
@@ -28,11 +28,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">SMP Bakti Jaya</h1>
+                    <h1 class="display-3 text-white animated slideInDown">SMK Bakti Jaya</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Akademik</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">SMP Bakti Jaya</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">SMK Bakti Jaya</a></li>
                            
                         </ol>
                     </nav>
@@ -44,15 +44,15 @@
 
 
    
-    <!-- smp_baktijaya Start -->
+    <!-- smk_baktijaya Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 
                 <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">SMP Bakti Jaya</h6>
+                    <h6 class="section-title bg-white text-start text-primary pe-3">SMK Bakti Jaya</h6>
                     
-                    <p class="mb-4">{!! $smp_baktijaya[0]->description !!}</p>
+                    <p class="mb-4">{!! $smk_baktijaya[0]->description !!}</p>
                     
                     
                    
@@ -60,6 +60,6 @@
             </div>
         </div>
     </div>
-    <!-- smp_baktijaya End -->
+    <!-- smk_baktijaya End -->
 
     @endsection
