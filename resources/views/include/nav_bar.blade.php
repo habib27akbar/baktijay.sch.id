@@ -43,26 +43,26 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portal</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="https://baktijaya.sch.id/guru" class="dropdown-item">Guru</a>
-                    <a href="https://baktijaya.sch.id/siswwa" class="dropdown-item">Siswa</a>
-                    <a href="testimonial.html" class="dropdown-item">Download</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">Guru</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">Siswa</a>
+                    <a href="{{ route('download.index') }}" class="dropdown-item">Download</a>
                 </div>
             </div>
 
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PSB Online</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="team.html" class="dropdown-item">Biaya Pendaftaran</a>
-                    <a href="testimonial.html" class="dropdown-item">Prosedur Pendaftaran</a>
-                    <a href="testimonial.html" class="dropdown-item">PSB SMP Bakti Jaya</a>
-                    <a href="testimonial.html" class="dropdown-item">PSB SMK Bakti Jaya</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">Biaya Pendaftaran</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">Prosedur Pendaftaran</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">PSB SMP Bakti Jaya</a>
+                    <a href="https://baktijaya.sch.id/maintenance" class="dropdown-item">PSB SMK Bakti Jaya</a>
                 </div>
             </div>
 
 
-            <a href="contact.html" class="nav-item nav-link">Kontak</a>
+            <a href="{{ route('kontak.index') }}" class="nav-item nav-link">Kontak</a>
         </div>
-        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Daftar Sekarang<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="https://baktijaya.sch.id/maintenance" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Daftar Sekarang<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->

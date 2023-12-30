@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\FotoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IcbjValueController;
+use App\Http\Controllers\KontakController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\SmkBaktijayaController;
 use App\Http\Controllers\SmpBaktijayaController;
@@ -31,3 +33,5 @@ Route::resource('smp_baktijaya', SmpBaktijayaController::class);
 Route::resource('smk_baktijaya', SmkBaktijayaController::class);
 Route::resource('foto', FotoController::class);
 Route::resource('video', VideoController::class);
+Route::resource('download', DownloadController::class);
+Route::resource('kontak', KontakController::class);
