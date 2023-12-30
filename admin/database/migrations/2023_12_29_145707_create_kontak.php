@@ -16,6 +16,7 @@ class CreateKontak extends Migration
         Schema::create('kontak', function (Blueprint $table) {
             $table->id();
             $table->text('alamat');
+            $table->string('email', 100)->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('twitter')->nullable();
