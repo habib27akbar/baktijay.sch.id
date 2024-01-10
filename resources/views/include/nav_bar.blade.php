@@ -62,7 +62,7 @@
 
             <a href="{{ route('kontak.index') }}" class="nav-item nav-link">Kontak</a>
         </div>
-        <a href="https://baktijaya.sch.id/maintenance" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Daftar Sekarang<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="https://baktijaya.sch.id/maintenance" class="btn btn-primary py-4 d-none d-lg-block">Daftar&nbsp;Sekarang&nbsp;<i class="fa fa-arrow-right"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
