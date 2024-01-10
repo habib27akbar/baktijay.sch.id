@@ -1,8 +1,8 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+    <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
         {{-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2> --}}
-            <img class="m-0 text-primary" style="width: 100px; height:75px;" src="{{ asset('img/logo-1.jpeg') }}">
+            <img class="m-0 text-primary" style="width: 350px; height:75px;" src="{{ asset('img/logo.jpeg') }}">
         
        
     </a>
