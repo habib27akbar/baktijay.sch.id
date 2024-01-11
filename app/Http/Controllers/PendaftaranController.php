@@ -30,8 +30,10 @@ class PendaftaranController extends Controller
         $hashed = hash("sha512", $request->order_id . $request->status_code . $request->gross_amount . $serverKey);
         if ($hashed == $request->signature_key) {
             if ($request->transaction_status == 'capture') {
-                $pendaftaran = PendaftaranModel::find($request->order_id);
-                $pendaftaran->update(['status' => 1]);
+                $updateData = [
+                    'status' => 1
+                ];
+                PendaftaranModel::where('id', $request->order_id)->update($updateData);
             }
         }
     }
