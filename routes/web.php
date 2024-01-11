@@ -39,4 +39,3 @@ Route::resource('kontak', KontakController::class);
 Route::resource('pendaftaran', PendaftaranController::class);
 // Route::post('checkout', [PendaftaranController::class, 'checkout'])->name('checkout');
 Route::get('checkout/{id}', [PendaftaranController::class, 'checkout']);
-Route::post('midtrans-callback', [PendaftaranController::class, 'callback']);
